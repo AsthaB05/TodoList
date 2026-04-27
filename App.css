@@ -1,0 +1,111 @@
+.card {
+  background: rgba(30, 30, 50, 0.85);
+  backdrop-filter: blur(12px);
+
+  padding: 30px 40px;
+  border-radius: 16px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(127, 90, 240, 0.2);
+
+  border: 1px solid rgba(127, 90, 240, 0.2);
+
+  min-width: 350px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CENTER CONTENT */
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* LIST */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 🔥 BUTTONS (VISIBLE + CLEAN) */
+.counter {
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 6px;
+
+  color: white;
+  background-color: #7f5af0;   /* SOLID COLOR */
+
+  border: 2px solid #a78bfa;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* HOVER EFFECT */
+.counter:hover {
+  background-color: #6d4de0;
+  border-color: #c4b5fd;
+  transform: translateY(-2px);
+}
+
+/* CLICK EFFECT */
+.counter:active {
+  transform: scale(0.95);
+}
+
+/* OPTIONAL: DIFFERENT BUTTON COLORS */
+
+/* DELETE BUTTON (first button in each li) */
+li button:nth-of-type(1) {
+  background-color: #ef4444;
+  border-color: #f87171;
+}
+
+li button:nth-of-type(1):hover {
+  background-color: #dc2626;
+}
+
+li {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  background: rgba(255, 255, 255, 0.03);
+  padding: 10px 15px;
+  border-radius: 8px;
+
+  transition: 0.2s;
+}
+
+li:hover {
+  background: rgba(127, 90, 240, 0.08);
+}
+
+/* MARK ALL DONE BUTTON */
+#center > button:last-child {
+  background-color: #3b82f6;
+  border-color: #60a5fa;
+}
+
+#center > button:last-child:hover {
+  background-color: #2563eb;
+}

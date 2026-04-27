@@ -1,0 +1,91 @@
+:root {
+  --text: #d1d5db;
+  --text-h: #ffffff;
+  --bg: linear-gradient(135deg, #1e1e2f, #2b2b45);
+  --border: #3b3d5c;
+
+  --accent: #7f5af0;
+  --accent-light: #a78bfa;
+
+  --input-bg: rgba(31, 31, 48, 0.95);
+
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* BODY */
+body {
+  margin: 0;
+}
+
+/* ROOT */
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* INPUT */
+.input {
+  color: white;
+  font-size: 18px;
+  padding: 12px 20px;
+  width: 260px;
+
+  background: var(--input-bg);
+  border: 1px solid #555;
+  border-radius: 10px;
+
+  transition: 0.3s;
+}
+
+.input::placeholder {
+  color: #aaa;
+}
+
+.input:hover {
+  border-color: var(--accent-light);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+}
+
+/* 🔥 BUTTONS (FIXED PROPERLY) */
+.counter {
+  display: inline-block;   /* IMPORTANT */
+  margin: 5px;
+
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 6px;
+
+  color: white;
+  background-color: #7f5af0;   /* SOLID COLOR (NOT TRANSPARENT) */
+
+  border: 2px solid #a78bfa;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* HOVER */
+.counter:hover {
+  background-color: #6d4de0;
+  border-color: #c4b5fd;
+  transform: translateY(-2px);
+}
+
+/* CLICK */
+.counter:active {
+  transform: scale(0.95);
+}
+
+/* HEADINGS */
+h3 {
+  color: white;
+}
